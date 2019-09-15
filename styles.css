@@ -1,0 +1,27 @@
+body {
+    background-color: ivory;
+}
+
+.mdl-tabs__tab-bar {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+}
+
+.mdl-mini-footer {
+  grid-area: footer;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 50px auto auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
